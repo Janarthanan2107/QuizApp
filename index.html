@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- normalized css -->
+    <link rel="stylesheet" href="./style/normalized.css">
+    <!-- fontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Customized css -->
+    <link rel="stylesheet" href="./style/customized.css">
+</head>
+
+<body>
+    <!--Contents needs to places here!-->
+    <div class="quiz-container">
+        <div class="quiz-card-container">
+            <div class="quiz-card">
+                <div class="question-container">
+                    <h3 class="question" id="question">Which language runs in a web browser?</h3>
+                </div>
+                <div class="options-container" id="options-container">
+                    <div class="option">
+                        <input type="radio" name="radioButton" id="option-one">
+                        <label for="option-one" id="label-one">Java</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="radioButton" id="option-two">
+                        <label for="option-two" id="label-two">C</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="radioButton" id="option-three">
+                        <label for="option-three" id="label-three">Python</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="radioButton" id="option-four">
+                        <label for="option-four" id="label-four">JavaScript</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submit-container" id="submit">
+            <p id="submit">Submit</p>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
