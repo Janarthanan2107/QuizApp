@@ -64,28 +64,31 @@ const checkAnswer = () => {
         const answerValue = selectedAnswer.id;
 
         if (questionCounter === 1) {
+            //counter updating and 2nd question call
             questionCounter++;
             questionTwo()
             if (answerValue === 'option-four') {
                 score++;
             }
         } else if (questionCounter === 2) {
+            //counter updating and 3rd question call
             questionCounter++;
             questionThree()
             if (answerValue === 'option-two') {
                 score++;
             }
         } else if (questionCounter === 3) {
+            //counter updating and 4th question call
             questionCounter++;
             questionFour()
             if (answerValue === 'option-one') {
                 score++;
             }
         } else if (questionCounter === 4) {
-            questionCounter++;
             if (answerValue === 'option-four') {
                 score++;
             }
+            //displaying a message with score
             displayResult()
         } else {
             displayResult()
@@ -98,6 +101,7 @@ const displayResult = () => {
     optionsContainer.classList.add("hide")
     submit.innerText = "Reload"
     submit.addEventListener("click", function () {
+        //referred in google
         location.reload();
     });
 }
